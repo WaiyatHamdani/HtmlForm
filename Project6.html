@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+author:Waiyat Hamdani
+prof: Ryan Fisher
+mission: to create internet survey like in the screenshoot that has been given.
+-->
+<html>
+    <head>
+        <title> project6-BY:Waiyat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2> Internet Usage Survey</h2>
+        <p> This Survey is being conducted to help identify the internet usage patterns of our customers.
+        please take a few moments to complete and submit this short form. Thank you for your cooperation</p>
+        
+        <form name="survey" id="survey" action="mailto:waiyat.hamdani@gmail.com" method="post">
+            <table cellpadding="15" cellspacing="5" width="65%">
+                <tr>
+                    <td> 
+                        <label>
+                        what type of internet conncetion do you have? <br/>
+                        (Select One)
+                        </label>
+                    </td>
+                    <td><!--multiple choise code start here -->
+                        <select name="connection" id="connection" size="4">
+                            <option value="Dial-up"> dial-up</option>
+                            <option value="DSL">DSL</option>
+                            <option value="High Speed Cable"> High Speed Cable</option>
+                            <option value="other"> Other </option>
+                        </select><!-- multiple choise code start here-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            what type of computer do you use most at home?
+                        </label>
+                    </td>
+                    <td><!--round choise check list code start here -->
+                        <input type="radio" name="comptype" value="desktop" /> desktop
+                        <input type="radio" name="comptype" value="Laptop" /> Laptop
+                     </td><!--round choise check list code end here -->
+                </tr>
+                <tr>
+                    <td>
+                        <label>How would you describe your main reason for using the Internet?</label>
+                    </td>
+                    <td><!--round choise check list code start here -->
+                        <input type="radio" name="compuse" value="work" />To do work-related activities<br>
+                        <input type="radio" name="compuse" value="school" />To do school-related activities<br>
+                        <input type="radio" name="compuse" value="entertainment" />For entertainment purposes<br>
+                        <input type="radio" name="compuse" value="other" />Other activities
+                    </td><!--round choise check list code end here -->
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset style="padding: 10px"><!--padding code row 1-->
+                            <legend>Types of sites visited</legend>
+                            <p><label>What types of web sites do you access most often?<br />Check all that apply.</label><p>
+                            <input type="checkbox" name="sites" id="sites" value="self"/>Self Improvement<br /> <!--square checklist box code start here-->
+                            <input type="checkbox" name="sites" id="sites" value="entertainment"/>Entertainment<br />
+                            <input type="checkbox" name="sites" id="sites" value="newssports"/>News and Sports<br />
+                            <input type="checkbox" name="sites" id="sites" value="reference"/>Reference<br />
+                            <input type="checkbox" name="sites" id="sites" value="email"/>Email<br /><!--square checklist box code start here-->
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset style="padding: 10px"><!--padding code row 2-->
+                            <legend>Time spent using Internet</legend><br />
+                            <p><label>During an average week, how long do you spend online?</label><p>
+                            <input type="radio" name="comptime" value="1" />0-3 Hours<br><!--round checklist box code start here-->
+                            <input type="radio" name="comptime" value="2" />4-6 Hours<br>
+                            <input type="radio" name="comptime" value="3" />7-10 Hours<br>
+                            <input type="radio" name="comptime" value="4" />11-14 Hours<br>
+                            <input type="radio" name="comptime" value="5" />15+ Hours<!--round checklist box code start here-->
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>Please comment on your opinions concerning Internet privacy and safety.</label><br />
+                        <textarea id="opinion" name="opinion" rows="5" cols="100"></textarea><!-- input textarea with row and col code-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>First Name: </label>
+                        <input type="text" name="firstname" id="firstname" size="50" /><!-- just input code-->
+                    </td>
+                    <td>
+                        <label>Last Name: </label>
+                        <input type="text" name="lastname" id="lastname" size="50" /><!-- just input code-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Age: </label>
+                        <input type="text" name="age" id="age" size="5" />
+                    </td>
+                    <td>
+                        <label>Zip Code: </label>
+                        <input type="text" name="zip" id="zip" size="10" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">
+                        <input type="submit" value="Click to Submit" />
+                    </td>
+                    <td>
+                        <input type="reset" value="Clear Form" />
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>
